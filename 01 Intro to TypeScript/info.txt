@@ -1,0 +1,15 @@
+- tpescript is not about reinventing javaScript 
+
+- typescript is all about type safty
+
+- what does typescript does 
+	it does static checking like 	other languages like goLan, 	java, etc..
+
+what does it means??
+it means that whenever we are writing our code the parser or the language are being constantly be analysed by the Ide's
+for example if i try to access a undefine object it would give me error at the time of accessing it
+------------------------------
+Devlopment process:---
+first we write code in typescript -> then it got compiled to javascript lang
+- typescript is a devlopment tool, it help to write better code with less problems with more scalable and maintainable code
+- the code still run in javascript and the code send to the production is also in javascript format
