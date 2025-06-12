@@ -1,0 +1,11 @@
+Why use generics?
+
+Without generics (bad):
+typescriptfunction identityString(value: string): string { return value; }
+function identityNumber(value: number): number { return value; }
+function identityBoolean(value: boolean): boolean { return value; }
+// You'd need separate functions for each type!
+
+With generics (good):
+typescriptfunction identity<T>(value: T): T { return value; }
+// One function works for all types!

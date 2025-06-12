@@ -1,0 +1,18 @@
+| Feature                     | Abstract Class                    | Interface                |
+| --------------------------- | --------------------------------- | ------------------------ |
+| Can create object from it?  | ❌ No                              | ❌ No                     |
+| Can have logic inside?      | ✅ Yes (with methods)              | ❌ Only method signatures |
+| Can have constructors?      | ✅ Yes                             | ❌ No                     |
+| Can extend or implement it? | ✅ Extend in subclass              | ✅ Implement in class     |
+| Purpose                     | Partial implementation + contract | Structure-only           |
+
+
+-getSepia() is abstract, so it's just a method signature — no body.
+-getReelTime() is a regular method — already implemented.
+-TakePhoto is abstract — you can't create an object from it directly.
+
+
+🔍 What is the super keyword?
+The super keyword is used to:
+    |-Call the constructor of the parent class from a child class.
+    |-Access parent class methods or properties.

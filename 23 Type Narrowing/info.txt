@@ -1,0 +1,20 @@
+🔍 Checking the actual type of the input you’re receiving at runtime, when multiple types are possible, so you can safely operate on it. So narrowing means to check for every input i'm receiving
+
+In TypeScript, narrowing refers to the process of refining the type of a variable from a broader (or union) type to a more specific type based on runtime checks.
+
+🧠 Why do we need narrowing?
+Because TypeScript allows union types like string | number, we often need to determine what exact type we’re working with at runtime, so we can safely access specific properties or methods.
+
+❗ Without narrowing = TypeScript will throw error
+function wrong(val: number | string) {
+    return val.toLowerCase(); // ❌ Error: 'number' doesn't have 'toLowerCase'
+}
+
+
+-------------------------------------------------------------------------------------------
+instanceOf 
+The pet is Fish return type annotation is a type predicate that tells TypeScript how to narrow the types based on the boolean result.
+In your getFood function:
+
+If isFish(pet) returns true → pet is treated as type Fish
+If isFish(pet) returns false → pet is treated as type Bird (assuming you meant Bird instead of Brid)

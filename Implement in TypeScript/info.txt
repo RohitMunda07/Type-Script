@@ -1,0 +1,22 @@
+| Feature                   | `interface`                           | `class`                                           |
+| ------------------------- | ------------------------------------- | ------------------------------------------------- |
+| Purpose                   | Describes **structure or contract**   | Blueprint for creating **objects**                |
+| Compiles to JavaScript    | ❌ No — used **only by TypeScript**   | ✅ Yes — becomes actual JS class                   |
+| Contains logic (methods)? | ❌ Only signatures                    | ✅ Can have logic in methods and constructor       |
+| Can extend or implement?  | ✅ Can `extend` other interfaces      | ✅ Can `extend` classes and `implement` interfaces |
+| Usage                     | For **type checking and enforcement**  | For **creating and using real instances**         |
+
+
+can't be used in this format we can't simply initialise this
+class {
+    readonly id: string;
+    email: string;
+    login(): boolean;
+}
+
+instead we need to have a constructor to do so
+class {
+    constructor(){
+        
+    }
+}
